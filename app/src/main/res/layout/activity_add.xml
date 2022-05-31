@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bgcatecoffee"
+    tools:context=".Admin.Add">
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Your Product"
+        android:fontFamily="@font/baloo_thambi"
+        android:id="@+id/t1"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Your Price"
+        android:fontFamily="@font/baloo_thambi"
+        android:id="@+id/t2"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Your Rating"
+        android:fontFamily="@font/baloo_thambi"
+        android:id="@+id/t3"
+        android:textColor="#000"/>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ic_baseline_coffee_24" />
+
+    <Button
+        android:id="@+id/browse"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:fontFamily="@font/baloo_thambi"
+        android:onClick="selectimage"
+        android:backgroundTint="@color/colorPrimaryDark"
+
+        android:padding="3dp"
+        android:text="select Image" />
+
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/baloo_thambi"
+        android:onClick="savaData"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:text="ADD Product"
+        android:textColor="#FFF" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

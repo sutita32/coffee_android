@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeadminmain"
+    app:startDestination="@id/menuHome">
+
+    <fragment
+        android:id="@+id/menuHome"
+        android:name="com.example.registration.Admin.HomeAFragment"
+        android:label="Home Admin"
+        tools:layout="@layout/fragment_home_a" />
+    <fragment
+        android:id="@+id/menuProduct"
+        android:name="com.example.registration.Admin.ProductAdminFragment"
+        android:label="Product"
+        tools:layout="@layout/fragment_product_admin" >
+        <action
+            android:id="@+id/action_menuProduct_to_addActivity"
+            app:destination="@id/addActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuLogout"
+        android:name="com.example.registration.Admin.LogoutAFragment"
+        android:label="Category"
+        tools:layout="@layout/activity_login_admin" />
+    <activity
+        android:id="@+id/addActivity"
+        android:name="com.example.registration.Admin.Add"
+        android:label="activity_add"
+        tools:layout="@layout/activity_add" />
+
+</navigation>
